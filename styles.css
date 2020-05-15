@@ -1,0 +1,110 @@
+/*https://colorhunt.co/palette/80102
+*/
+:root{
+  --pastel-color-primary: #9a9b94;
+  --pastel-color-secondary:#52524e;
+  --bg-pastel-color-primary: #d4d6c8;
+  --bg-pastel-color-secondary: #e9e9e5;
+  
+}
+
+html, body {
+  background-color: var(--bg-pastel-color-primary);
+  color: var(--pastel-color-secondary);
+}
+.navbar-pastel {
+  background-color: var(--pastel-color-secondary);
+  color: var(--pastel-color-primary);
+}
+.searchBox {
+  width: 100%;
+  display: flex;
+}
+.searchInput {
+  width: 100%;
+  padding: .375rem .75rem;
+  border: 1px solid var(--bg-pastel-color-secondary);
+  border-radius: .25rem ;
+  color: var(--pastel-color-secondary);
+  background-color: var(--bg-pastel-color-secondary);
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.searchInput:focus{
+  outline: none;
+}
+.btn-pastel {
+  color: var(--pastel-color-secondary);
+  background-color: var(--pastel-color-primary);
+  border-color: var(--pastel-color-primary);
+}
+.center-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnBackLeft {
+  position: absolute;
+  left: 0;
+}
+.poster {
+  background-color: var(--bg-pastel-color-secondary);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.poster:hover {
+  color: #fff;
+  background-color: #495057;
+}
+.bg-img {
+  height: 240px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nowrapScroll {
+  white-space: nowrap;
+  overflow: auto;
+  overflow-y: hidden;
+}
+.font-weight-4{
+  font-weight: 400;
+}
+.font-weight-6{
+  font-weight: 600;
+}
+.table-theme {
+  color: var(--pastel-color-secondary);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+@media(min-width:768px){
+  .resize-plot{
+    max-height: 125px;
+    overflow: scroll;
+  }
+}
+@media(min-width:992px){
+  .resize-plot{
+    max-height: 120px;
+    overflow: scroll;
+  }
+}
+@media(min-width:1200px){
+  .resize-plot{
+    max-height: none;
+    overflow: auto;
+  }
+
+}
+/*@media(min-width:768px){
+  .poster-img {
+    height: 360px;
+  }
+}
+@media(min-width:992px){
+  .poster-img {
+    width: 100%;
+  }
+}*/
+
